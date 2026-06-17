@@ -3,7 +3,7 @@ import tkinter as tk
 from typing import Dict, Callable, Any, TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from ....backend import CalculatorBackEnd
+    from .....backend import CalculatorBackEnd
 
 class KeyBoardManagerMixin:
     """
@@ -23,7 +23,7 @@ class KeyBoardManagerMixin:
             func()
 
         else:
-            print(f'unsuported key for now: keysym: {event.keysym}, char: {event.char}')
+            print(f'currently unsuported key: keysym: {event.keysym}, char: {event.char}')
             self.calculator.append_input(event.char)
 
 
