@@ -3,7 +3,7 @@ import os
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from ...backend import PathManager
+    from ....backend import PathManager
 
 class MakeupManagerMixin:
 

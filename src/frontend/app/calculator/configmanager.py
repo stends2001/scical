@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING, Dict, Any
 import yaml 
 
 if TYPE_CHECKING:
-    from ...backend import PathManager
+    from ....backend import PathManager
 
 class ConfigManagerMixin:
     """

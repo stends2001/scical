@@ -7,7 +7,7 @@ from .makeupmanager import MakeupManagerMixin
 from .buttons import ButtonGridManagerMixin
 from .keyboard import KeyBoardManagerMixin
 
-from ...backend import PathManager, CalculatorBackEnd
+from ....backend import PathManager, CalculatorBackEnd
 
 
 class Calculator(ConfigManagerMixin,
@@ -28,7 +28,7 @@ class Calculator(ConfigManagerMixin,
 
         self.set_config()
         self.set_geometry()
-        self.set_outlook()
+        self.set_makeup()
         self.set_grid()
         self.bind_keyboard()
         self._setup_keyboard_shortcuts()

@@ -1,9 +1,9 @@
 from typing import List, TYPE_CHECKING
 import tkinter as tk
-from .buttons import GRID1, GRID2, ButtonGrid
+from .buttongrids import GRID1, GRID2, ButtonGrid
 
 if TYPE_CHECKING:
-    from ....backend import CalculatorBackEnd
+    from .....backend import CalculatorBackEnd
 
 
 class ButtonGridManagerMixin:
