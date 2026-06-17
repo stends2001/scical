@@ -74,7 +74,6 @@ class ButtonGrid:
     ncol:    int 
 
     def __post_init__(self):
-        print(len(self.buttons))
         if self.nrow != len(self.buttons):
             raise ValueError('nrows != number of rows in buttons')
 
