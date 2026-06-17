@@ -1,7 +1,7 @@
 import os 
 from pathlib import Path
 
-class PathManager():
+class PathManager:
 
     """ 
     Attributes
