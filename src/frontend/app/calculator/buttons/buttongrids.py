@@ -46,7 +46,7 @@ buttons_grid1 = [
 # ==================== #
 buttons_grid2 = [
     [
-        Button('xⁿ',        'notimplemented', '**', "^"),
+        Button('xⁿ',        'input', '**', "^"),
         Button('ⁿ√x',       'notimplemented'),
         Button('logₙ(x)',   'notimplemented'),
         Button('ln(x)',     'notimplemented',   'math.log',     'ln'),

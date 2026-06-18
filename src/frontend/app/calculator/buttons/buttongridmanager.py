@@ -116,7 +116,7 @@ class ButtonGridManagerMixin:
             for col, button in enumerate(button_row):
 
                 if button.type == 'input':
-                    func = lambda val = button.value: self.calculator.append_input(val) # type: ignore
+                    func = lambda val = button.representation: self.calculator.append_input(val) # type: ignore
 
                 elif button.type == 'notimplemented':
                     func = lambda val = button.value: print(f'button with value {val} has not been implemented')
