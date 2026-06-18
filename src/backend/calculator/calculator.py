@@ -23,7 +23,10 @@ class CalculatorBackEnd(InputParser):
                 case "numerical":
                     out += t.value
                 case "operator":
-                    out += t.value
+                    if t.value == "^":
+                        out += "**"
+                    else:
+                        out += t.value
                 case "constant":
                     out += str(CONSTANTS[t.value])
                 case 'parenthL':
