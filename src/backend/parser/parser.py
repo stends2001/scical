@@ -23,7 +23,7 @@ FUNCS: Dict[str, Callable[[float], float]] = {
 # Each rule describes HOW to recognize a piece of the string
 TOKEN_SPEC: List[Tuple[TokenTypes, str]] = [
     ("numerical",   r"\d+(\.\d+)?"),            # matches any number of digits possibly including decimals
-    ("operator",   r"\*\*|[+\-*/]"),              # matches **, +, \, -, *
+    ("operator",   r"\*\*|[+\-*^/]"),           # matches **, +, \, -, *
     ('function',    r"ln|exp|sqrt"),    
     ("constant",    r"pi|e"),                   # matches constants: pi, e
     ("skip",        r"\s+"),                    # matches whitespace (we ignore it)
