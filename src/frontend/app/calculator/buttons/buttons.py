@@ -1,9 +1,9 @@
 from dataclasses import dataclass
 from typing import List, Iterator, Optional, Literal, Dict, Any
 
-from .appearance import input_button_appearance, system_button_appearance, warning_button_appearance, notimplemented_button_appearance
+from .appearance import input_button_appearance, system_button_appearance, warning_button_appearance, notimplemented_button_appearance, ans_button_appearance
 
-ButtonType = Literal['input','system','notimplemented']
+ButtonType = Literal['input','system','notimplemented', 'ans']
 
 @dataclass 
 class Button:
@@ -45,6 +45,8 @@ class Button:
             return warning_button_appearance
         elif self.type == 'system':
             return system_button_appearance
+        elif self.type == 'ans':
+            return ans_button_appearance        
         elif self.type == 'notimplemented':
             return notimplemented_button_appearance
         else:

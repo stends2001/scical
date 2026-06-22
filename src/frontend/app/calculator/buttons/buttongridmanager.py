@@ -121,7 +121,7 @@ class ButtonGridManagerMixin:
                 elif button.type == 'notimplemented':
                     func = lambda val = button.value: print(f'button with value {val} has not been implemented')
 
-                elif button.type == 'system':
+                elif button.type == 'system' or button.type == 'ans':
                     func = lambda val = button.value: self.calculator.resolve_system_input(val)
                 
                 else:

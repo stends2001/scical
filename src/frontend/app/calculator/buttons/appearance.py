@@ -20,3 +20,4 @@ input_button_appearance             = make_button({'activebackground': 'lightgre
 system_button_appearance            = make_button({'activebackground': 'darkgrey'})
 warning_button_appearance           = make_button({'activebackground': "#E65252", 'bg': '#F7A8A8'})
 notimplemented_button_appearance    = make_button({'activebackground': "#CA7CC6", 'bg': "#CA7CC6"})
+ans_button_appearance               = make_button({'activebackground': "#37D664", 'bg': "#8FCD94"})

@@ -23,7 +23,7 @@ buttons_grid1 = [
         Button('-', 'input'),
     ],
     [  
-        Button('ANS',   'system',   'ans'),           
+        Button('ANS',   'ans',   'ans'),           
         Button('0',     'input'),
         Button('.',     'input'),
         Button('+',     'input'),
@@ -65,13 +65,13 @@ buttons_grid2 = [
         Button('e',        'input','e'),          
     ],
     [
-        Button('...)',          'notimplemented',    '...',             '...'),
-        Button('...',           'notimplemented',    '...',             '...'),
-        Button('!',             'notimplemented',    '',             ''),
-        Button('eˣ',            'input',            'exp'),        
+        Button('ans',          'ans',    'ans'),
+        Button('int',           'input',    'int',             'int'),
+        Button('!',             'input',    'fac',             'fac'),
+        Button('eˣ',            'input',            'exp', 'exp'),        
     ],    
     [
-        Button('abs(x)',        'notimplemented',    'abs',             'abs'),
+        Button('abs(x)',        'input',    'abs',             'abs'),
         Button('round(x,n)',    'notimplemented',    'round x to n',    'notimplemented'),
         Button('nPr',           'notimplemented',    'npr',             'npr'),
         Button('nCr',           'notimplemented',    'nCr',             'nCr'),        
