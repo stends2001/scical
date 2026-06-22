@@ -23,3 +23,12 @@ First and foremost, I need to add a lot of documentation, everywhere.
 The actual calculator itself is working in its first, and simplest version. The 'basic' calculator buttons work, as do the simple functions. The more complex mathematical functions, that also need some adjustments in the order of inputs, still need to be worked out (currently these buttons are highlighted in light purple). The skeleton is ready though, so the extension here should be very doable.
 
 The entire graphcial - calculator still needs to be setup. This will be similar to the one by desmos (desmos.com/calculator), where there are multiple fields available for one expression each ($y=1$, $x=1$, but also $f(x): y = x$) as well as the Cartesian axes on which these functions or expressions are plotted. These should allow for interactive use: i.e. zooming in and out, hovering over curves, etc.
+
+Supporting new functions:
+- for "!": use math.factorial
+    - when this is seen in the tokenizer, it's token should be shuffled to position(s) earlier. For example (8+1)! should be math.factorial(8+1)
+- for 'round(x,n)': use round(x, n)
+    - again, reshuffling
+- for 'ln(x)': use math.log
+    - no need to reshuffle
+- 
