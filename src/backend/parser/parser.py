@@ -17,14 +17,17 @@ CONSTANTS: Dict[str, float] = {
 FUNCS: Dict[str, Callable[[float], float]] = {
     'ln'    : math.log,
     'sqrt'  : math.sqrt,
-    'exp'   : math.exp
+    'exp'   : math.exp,
+    'sin'   : math.sin,
+    'cos'   : math.cos,
+    'tan'   : math.tan
 } 
 
 # Each rule describes HOW to recognize a piece of the string
 TOKEN_SPEC: List[Tuple[TokenTypes, str]] = [
     ("numerical",   r"\d+(\.\d+)?"),            # matches any number of digits possibly including decimals
     ("operator",   r"\*\*|[+\-*^/]"),           # matches **, +, \, -, *
-    ('function',    r"ln|exp|sqrt"),    
+    ('function',    r"ln|exp|sqrt|sin|cos|tan"),    
     ("constant",    r"pi|e"),                   # matches constants: pi, e
     ("skip",        r"\s+"),                    # matches whitespace (we ignore it)
     ('parenthL',    r"\("),

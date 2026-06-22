@@ -49,13 +49,13 @@ buttons_grid2 = [
         Button('xⁿ',        'input', '**', "^"),
         Button('ⁿ√x',       'notimplemented'),
         Button('logₙ(x)',   'notimplemented'),
-        Button('ln(x)',     'notimplemented',   'math.log',     'ln'),
+        Button('ln(x)',     'input',  'ln', 'ln'),
     ],
 
     [
-        Button('sin(x)',    'notimplemented',   'math.sin',  'sin'),
-        Button('cos(x)',    'notimplemented',  'math.cos',  'cos'),
-        Button('tan(x)',    'notimplemented',  'math.tan',  'tan'),
+        Button('sin(x)',    'input',   'sin',  'sin'),
+        Button('cos(x)',    'input',  'cos',  'cos'),
+        Button('tan(x)',    'input',  'tan',  'tan'),
         Button('π',          'input','pi'),        
     ],
     [
