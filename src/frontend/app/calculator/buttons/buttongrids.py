@@ -59,9 +59,9 @@ buttons_grid2 = [
         Button('π',          'input','pi'),        
     ],
     [
-        Button('sin⁻¹(x)', 'notimplemented', 'math.asin', 'asin'),
-        Button('cos⁻¹(x)', 'notimplemented', 'math.acos',  'acos'),
-        Button('tan⁻¹(x)', 'notimplemented', 'math.atan',  'atan'),
+        Button('sin⁻¹(x)', 'input', 'asin', 'asin'),
+        Button('cos⁻¹(x)', 'input', 'acos',  'acos'),
+        Button('tan⁻¹(x)', 'input', 'atan',  'atan'),
         Button('e',        'input','e'),          
     ],
     [
