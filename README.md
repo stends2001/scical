@@ -28,3 +28,6 @@ Supporting new functions:
 - for 'round(x,n)': use round(x, n)
     - again, reshuffling
 - find equivalence (with reshuffling) for factorial and abs
+
+- pytesting (assertions)
+- redundant evaluation (need caching instead)
