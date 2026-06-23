@@ -72,7 +72,7 @@ buttons_grid2 = [
     ],    
     [
         Button('abs(x)',        'input',    'abs',             'abs'),
-        Button('round(x,n)',    'notimplemented',    'round x to n',    'notimplemented'),
+        Button('round(x,n)',    'notimplemented',    'round(x,n)',    'round(x,n)'),
         Button('nPr',           'notimplemented',    'npr',             'npr'),
         Button('nCr',           'notimplemented',    'nCr',             'nCr'),        
     ],

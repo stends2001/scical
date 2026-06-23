@@ -11,7 +11,7 @@ supported_math_numbers      = ['e', 'pi']
 
 CONSTANTS: Dict[str, float] = {
     'e'     : math.e,
-    'pi'    : math.pi,
+    'pi'    : math.pi
 }
 
 FUNCS: Dict[str, Callable[[float], float]] = {
